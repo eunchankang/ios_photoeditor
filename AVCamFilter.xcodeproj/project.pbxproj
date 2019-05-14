@@ -35,8 +35,6 @@
 		267ED84D1ED7965A00898078 /* AVCamFilter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVCamFilter-Bridging-Header.h"; sourceTree = "<group>"; };
 		267ED84E1ED7965B00898078 /* minMaxFromBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = minMaxFromBuffer.m; sourceTree = "<group>"; };
 		267ED84F1ED7965B00898078 /* minMaxFromBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = minMaxFromBuffer.h; sourceTree = "<group>"; };
-		83D498D083D42BA000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		83EA4FB083EA4D4000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 		E414FC6C1D5921FD0007C979 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E422DFB71CEF894F0047D7A4 /* AVCamFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCamFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E422DFBF1CEF894F0047D7A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		E4A8A1411CF6188A006823AB /* PassThrough.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PassThrough.metal; sourceTree = "<group>"; };
 		E4E160DA1D00979000C83A5A /* FilterRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterRenderer.swift; sourceTree = "<group>"; };
 		E4E160DC1D0099F100C83A5A /* RosyCIRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosyCIRenderer.swift; sourceTree = "<group>"; };
+		E7C55CD0E7C55E3000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		E7D950B0E7D9791000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,31 +73,14 @@
 			path = Shaders;
 			sourceTree = "<group>";
 		};
-		83D432C083D4346000000001 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				83D498D083D42BA000000001 /* SampleCode.xcconfig */,
-			);
-			name = Configuration;
-			sourceTree = "<group>";
-		};
-		83EA4A5083EA47C000000001 /* LICENSE */ = {
-			isa = PBXGroup;
-			children = (
-				83EA4FB083EA4D4000000001 /* LICENSE.txt */,
-			);
-			name = LICENSE;
-			path = LICENSE;
-			sourceTree = "<group>";
-		};
 		E422DFAE1CEF894F0047D7A4 = {
 			isa = PBXGroup;
 			children = (
 				E414FC6C1D5921FD0007C979 /* README.md */,
 				E422DFB91CEF894F0047D7A4 /* AVCamFilter */,
 				E422DFB81CEF894F0047D7A4 /* Products */,
-				83D432C083D4346000000001 /* Configuration */,
-				83EA4A5083EA47C000000001 /* LICENSE */,
+				E7C549B0E7C54A5000000001 /* Configuration */,
+				E7D94C30E7D94E6000000001 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +115,23 @@
 			path = AVCamFilter;
 			sourceTree = "<group>";
 		};
+		E7C549B0E7C54A5000000001 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E7C55CD0E7C55E3000000001 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		E7D94C30E7D94E6000000001 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				E7D950B0E7D9791000000001 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,20 +160,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					E422DFB61CEF894F0047D7A4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeamName = "Apple Inc. - Core OS Plus Others";
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = E422DFB21CEF894F0047D7A4 /* Build configuration list for PBXProject "AVCamFilter" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -247,10 +247,11 @@
 /* Begin XCBuildConfiguration section */
 		E422DFC71CEF894F0047D7A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83D498D083D42BA000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = E7C55CD0E7C55E3000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPRESSION = lossless;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -307,10 +308,11 @@
 		};
 		E422DFC81CEF894F0047D7A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83D498D083D42BA000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = E7C55CD0E7C55E3000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPRESSION = "respect-asset-catalog";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -361,7 +363,7 @@
 		};
 		E422DFCA1CEF894F0047D7A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83D498D083D42BA000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = E7C55CD0E7C55E3000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -382,13 +384,13 @@
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "AVCamFilter/AVCamFilter-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		E422DFCB1CEF894F0047D7A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83D498D083D42BA000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = E7C55CD0E7C55E3000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -407,7 +409,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "AVCamFilter/AVCamFilter-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

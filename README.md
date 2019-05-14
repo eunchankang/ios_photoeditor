@@ -25,18 +25,18 @@ let width = CVPixelBufferGetWidth(previewPixelBuffer)
 let height = CVPixelBufferGetHeight(previewPixelBuffer)
 
 if textureCache == nil {
-	createTextureCache()
+    createTextureCache()
 }
 var cvTextureOut: CVMetalTexture?
 CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault,
-										  textureCache!,
-										  previewPixelBuffer,
-										  nil,
-										  .bgra8Unorm,
-										  width,
-										  height,
-										  0,
-										  &cvTextureOut)
+                                          textureCache!,
+                                          previewPixelBuffer,
+                                          nil,
+                                          .bgra8Unorm,
+                                          width,
+                                          height,
+                                          0,
+                                          &cvTextureOut)
 ```
 [View in Source](x-source-tag://DrawMetalTexture)
 
@@ -52,11 +52,11 @@ var error: CVReturn = kCVReturnSuccess
 let auxAttributes = [kCVPixelBufferPoolAllocationThresholdKey as String: allocationThreshold] as NSDictionary
 var pixelBuffer: CVPixelBuffer?
 while error == kCVReturnSuccess {
-	error = CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(kCFAllocatorDefault, pool, auxAttributes, &pixelBuffer)
-	if let pixelBuffer = pixelBuffer {
-		pixelBuffers.append(pixelBuffer)
-	}
-	pixelBuffer = nil
+    error = CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(kCFAllocatorDefault, pool, auxAttributes, &pixelBuffer)
+    if let pixelBuffer = pixelBuffer {
+        pixelBuffers.append(pixelBuffer)
+    }
+    pixelBuffer = nil
 }
 pixelBuffers.removeAll()
 ```
@@ -103,17 +103,17 @@ In the Metal approach, AVCamFilter sets up a command queue and thread groups to 
 
 ``` swift
 guard let inputTexture = makeTextureFromCVPixelBuffer(pixelBuffer: pixelBuffer, textureFormat: .bgra8Unorm),
-	let outputTexture = makeTextureFromCVPixelBuffer(pixelBuffer: outputPixelBuffer, textureFormat: .bgra8Unorm) else {
-		return nil
+    let outputTexture = makeTextureFromCVPixelBuffer(pixelBuffer: outputPixelBuffer, textureFormat: .bgra8Unorm) else {
+        return nil
 }
 
 // Set up command queue, buffer, and encoder.
 guard let commandQueue = commandQueue,
-	let commandBuffer = commandQueue.makeCommandBuffer(),
-	let commandEncoder = commandBuffer.makeComputeCommandEncoder() else {
-		print("Failed to create a Metal command queue.")
-		CVMetalTextureCacheFlush(textureCache!, 0)
-		return nil
+    let commandBuffer = commandQueue.makeCommandBuffer(),
+    let commandEncoder = commandBuffer.makeComputeCommandEncoder() else {
+        print("Failed to create a Metal command queue.")
+        CVMetalTextureCacheFlush(textureCache!, 0)
+        return nil
 }
 
 commandEncoder.label = "Rosy Metal"
@@ -126,8 +126,8 @@ let width = computePipelineState!.threadExecutionWidth
 let height = computePipelineState!.maxTotalThreadsPerThreadgroup / width
 let threadsPerThreadgroup = MTLSizeMake(width, height, 1)
 let threadgroupsPerGrid = MTLSize(width: (inputTexture.width + width - 1) / width,
-								  height: (inputTexture.height + height - 1) / height,
-								  depth: 1)
+                                  height: (inputTexture.height + height - 1) / height,
+                                  depth: 1)
 commandEncoder.dispatchThreadgroups(threadgroupsPerGrid, threadsPerThreadgroup: threadsPerThreadgroup)
 
 commandEncoder.endEncoding()
@@ -164,10 +164,10 @@ When the user tweaks the “MixFactor” slider, AVCamFilter modulates the inten
 
 ``` swift
 dataOutputQueue.async {
-	self.videoDepthMixer.mixFactor = mixFactor
+    self.videoDepthMixer.mixFactor = mixFactor
 }
 processingQueue.async {
-	self.photoDepthMixer.mixFactor = mixFactor
+    self.photoDepthMixer.mixFactor = mixFactor
 }
 ```
 [View in Source](x-source-tag://VaryMixFactor)
@@ -214,10 +214,10 @@ AVCamFilter streams depth data in addition to RGB video by maintaining buffers d
 ``` swift
 var depthFormatDescription: CMFormatDescription?
 CMVideoFormatDescriptionCreateForImageBuffer(allocator: kCFAllocatorDefault,
-											 imageBuffer: depthData.depthDataMap,
-											 formatDescriptionOut: &depthFormatDescription)
+                                             imageBuffer: depthData.depthDataMap,
+                                             formatDescriptionOut: &depthFormatDescription)
 if let unwrappedDepthFormatDescription = depthFormatDescription {
-	videoDepthConverter.prepare(with: unwrappedDepthFormatDescription, outputRetainedBufferCountHint: 2)
+    videoDepthConverter.prepare(with: unwrappedDepthFormatDescription, outputRetainedBufferCountHint: 2)
 }
 ```
 [View in Source](x-source-tag://StreamDepthData)
@@ -254,7 +254,7 @@ Without smoothing, the depth data in each frame may have gaps or holes. Smoothin
 
 ``` swift
 sessionQueue.async {
-	self.depthDataOutput.isFilteringEnabled = smoothingEnabled
+    self.depthDataOutput.isFilteringEnabled = smoothingEnabled
 }
 ```
 [View in Source](x-source-tag://SmoothDepthData)
