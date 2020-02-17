@@ -1,0 +1,6 @@
+framework module PixelEngine {
+  umbrella header "PixelEngine-umbrella.h"
+
+  export *
+  module * { export * }
+}

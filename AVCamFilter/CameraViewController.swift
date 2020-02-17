@@ -111,6 +111,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate, AVC
     
     private var statusBarOrientation: UIInterfaceOrientation = .portrait
     
+    var image : UIImage?
+    
     // MARK: - View Controller Life Cycle
     
     override func viewDidLoad() {
@@ -693,13 +695,16 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate, AVC
         let filteringEnabled = videoFilterOn
         if filteringEnabled {
             if gesture.direction == .left {
-                filterIndex = (filterIndex + 1) % filterRenderers.count
+                //filterIndex = (filterIndex + 1) % filterRenderers.count
+                filterIndex = (filterIndex + 1) % RosyCIRenderer.numberOfFilterType()
             } else if gesture.direction == .right {
-                filterIndex = (filterIndex + filterRenderers.count - 1) % filterRenderers.count
+                //filterIndex = (filterIndex + filterRenderers.count - 1) % filterRenderers.count
+                filterIndex = (filterIndex + RosyCIRenderer.numberOfFilterType() - 1) % RosyCIRenderer.numberOfFilterType()
             }
             
             let newIndex = filterIndex
-            let filterDescription = filterRenderers[newIndex].description
+           // let filterDescription = filterRenderers[newIndex].description
+            let filterDescription = RosyCIRenderer.filterNameArray[newIndex]
             updateFilterLabel(description: filterDescription)
             
             // Switch renderers
@@ -707,14 +712,16 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate, AVC
                 if let filter = self.videoFilter {
                     filter.reset()
                 }
-                self.videoFilter = self.filterRenderers[newIndex]
+                //self.videoFilter = self.filterRenderers[newIndex]
+                self.videoFilter = RosyCIRenderer()
             }
             
             processingQueue.async {
                 if let filter = self.photoFilter {
                     filter.reset()
                 }
-                self.photoFilter = self.photoRenderers[newIndex]
+                //self.photoFilter = self.photoRenderers[newIndex]
+                self.photoFilter = RosyCIRenderer()
             }
         }
     }
@@ -940,20 +947,23 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate, AVC
         videoFilterOn = !videoFilterOn
         let filteringEnabled = videoFilterOn
         
-        let stateImage = UIImage(named: filteringEnabled ? "ColorFilterOn" : "ColorFilterOff")
-        self.videoFilterButton.setImage(stateImage, for: .normal)
+        //let stateImage = UIImage(named: filteringEnabled ? "ColorFilterOn" : "ColorFilterOff")
+        
+        //self.videoFilterButton.setImage(stateImage, for: .normal)
         
         let index = filterIndex
         
         if filteringEnabled {
-            let filterDescription = filterRenderers[index].description
+            //let filterDescription = filterRenderers[index].description
+            let filterDescription = RosyCIRenderer.filterNameArray[index]
             updateFilterLabel(description: filterDescription)
         }
         
         // Enable/disable the video filter.
         dataOutputQueue.async {
             if filteringEnabled {
-                self.videoFilter = self.filterRenderers[index]
+                //self.videoFilter = self.filterRenderers[index]
+                self.videoFilter = RosyCIRenderer()
             } else {
                 if let filter = self.videoFilter {
                     filter.reset()
@@ -965,7 +975,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate, AVC
         // Enable/disable the photo filter.
         processingQueue.async {
             if filteringEnabled {
-                self.photoFilter = self.photoRenderers[index]
+                //self.photoFilter = self.photoRenderers[index]
+                self.photoFilter = RosyCIRenderer()
             } else {
                 if let filter = self.photoFilter {
                     filter.reset()
@@ -989,7 +1000,15 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate, AVC
             
             self.photoOutput.capturePhoto(with: photoSettings, delegate: self)
         }
-    }
+        performSegue(withIdentifier: "ShowPhoto_Segue", sender: nil)
+        }
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "ShowPhoto_Segue" {
+                let previewVC = segue.destination as! PreViewViewController
+                previewVC.image = self.image
+            }
+        }
     
     // MARK: - UI Utility Functions
     
@@ -1143,6 +1162,10 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate, AVC
     }
     
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+        if let imageData = photo.fileDataRepresentation(){
+            image = UIImage(data: imageData)
+            performSegue(withIdentifier: "ShowPhoto_Segue", sender: nil)
+        }
         guard let photoPixelBuffer = photo.pixelBuffer else {
             print("Error occurred while capturing photo: Missing pixel buffer (\(String(describing: error)))")
             return

@@ -1,0 +1,25 @@
+PODS:
+  - PixelEditor (0.2.1):
+    - PixelEngine (~> 0.2.0)
+    - TransitionPatch (~> 1.0.0)
+  - PixelEngine (0.2.1)
+  - TransitionPatch (1.0.2)
+
+DEPENDENCIES:
+  - PixelEditor
+  - PixelEngine
+
+SPEC REPOS:
+  trunk:
+    - PixelEditor
+    - PixelEngine
+    - TransitionPatch
+
+SPEC CHECKSUMS:
+  PixelEditor: 2982b2c613111b809662f8f91e29f1b0204ff1b6
+  PixelEngine: d0684b3e0d3efb348d13cea320731dedaf3f4965
+  TransitionPatch: c02b48b1429255b14ef82b7e411034e0958b9681
+
+PODFILE CHECKSUM: abbc85e16749ffa27e79370ebb3b02be252ab9f4
+
+COCOAPODS: 1.8.4

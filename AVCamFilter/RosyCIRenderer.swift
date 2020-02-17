@@ -27,6 +27,16 @@ class RosyCIRenderer: FilterRenderer {
     
     private(set) var inputFormatDescription: CMFormatDescription?
     
+    static let filterNameArray: [String] = ["CIPhotoEffectProcess", "CIPhotoEffectInstant", "Normal", "CIPhotoEffectMono", "CIPhotoEffectNoir", "CIPhotoEffectTonal", "CIPhotoEffectFade", "CIPhotoEffectChrome", "CIPhotoEffectTransfer"].sorted(by: >)
+    
+    //TODO: 필터 포토말고 비디오에 적용 가능한 것으로 바꿔야함. 이름 겹치는 버그 수정
+    
+    static func numberOfFilterType() -> Int {
+        return filterNameArray.count
+    }
+    
+
+    
     /// - Tag: FilterCoreImageRosy
     func prepare(with formatDescription: CMFormatDescription, outputRetainedBufferCountHint: Int) {
         reset()
@@ -40,8 +50,9 @@ class RosyCIRenderer: FilterRenderer {
         }
         inputFormatDescription = formatDescription
         ciContext = CIContext()
-        rosyFilter = CIFilter(name: "CIColorMatrix")
-        rosyFilter!.setValue(CIVector(x: 0, y: 0, z: 0, w: 0), forKey: "inputGVector")
+        rosyFilter = CIFilter(name: RosyCIRenderer.filterNameArray[RosyCIRenderer.numberOfFilterType() - 1] )
+//        rosyFilter = CIFilter(name: "CIColorMatrix")
+//        rosyFilter!.setValue(CIVector(x: 0, y: 0, z: 0, w: 0), forKey: "inputGVector")
         isPrepared = true
     }
     

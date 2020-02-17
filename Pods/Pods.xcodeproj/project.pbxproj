@@ -1,0 +1,1282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0068D743B20E8902AEEAE56CF8356020 /* ShadowsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E1C1ECF71C29B3504B4F5F2E55FF89 /* ShadowsControl.swift */; };
+		02C3A81439926FB1A6B504FECB0EA4DC /* SharpenControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E2B4A853A4AB3E2CEF56868C733C08 /* SharpenControl.swift */; };
+		051463889C97F1281C0712FCF9C7A0D0 /* DrawnPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362ADA9B3FBB657738B0A81B495C93A2 /* DrawnPath.swift */; };
+		0535D0E372F18903D8D5431C35026982 /* PixelEngine-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 496A843AE444E21538D90552873CAAD4 /* PixelEngine-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A52EF936E26AB4AF6478163EC2E5461 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F507165DAF3CD589807AF06B1CA0BFF /* Foundation.framework */; };
+		0E29EFC759481831978CFCA8BB56DD8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F507165DAF3CD589807AF06B1CA0BFF /* Foundation.framework */; };
+		0F2E851EC0CD2ADE058B71948CF15254 /* FilterUnsharpMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BC86B72AE8297DF16F34268B2832F /* FilterUnsharpMask.swift */; };
+		118353B3A9B45B9FA8E504E61B79EC63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA2B73BA252234B5A1866C2345A6E94 /* UIKit.framework */; };
+		12C215E946CED48255C008FCD0515680 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA2B73BA252234B5A1866C2345A6E94 /* UIKit.framework */; };
+		145DB3E92D8A0C9D8377F95108CAE1A8 /* FadeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4A4A5258DC2BC3CF5057215E1A8D1 /* FadeControl.swift */; };
+		1B2496C39EE33A464A7F0132DCDC9A28 /* FilterSaturation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D62575CC225E2817D9198A4A29EE3F /* FilterSaturation.swift */; };
+		1C802E193CB06CFDF5079A9D155E03F8 /* CropAndStraightenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF1CECF59F596A5C95ED477B0DE712 /* CropAndStraightenView.swift */; };
+		1DF40099A1B7FD21E6904C82138F53AF /* PixelEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E34E590A64B014A89D1269C88F35B5 /* PixelEngine.framework */; };
+		1E57E803B410EDD3C4267EF2822622BA /* FilterBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D821F58C57482B51ED232B666912310 /* FilterBrightness.swift */; };
+		2169795251C5710BC5D5C2AA16010D16 /* FilterVignette.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0AF27748954BB1AB6266E3A2104F2C /* FilterVignette.swift */; };
+		30D806BF763AC6C5E5CD884B17F9B87D /* ColorCubeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF77624844C9EFEFA905E0D00699FA9 /* ColorCubeStorage.swift */; };
+		31091E9AE166E8EDE865A48FBBA45D46 /* ZoomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E2FD161FB4EFBB5A889041AB33716 /* ZoomImageView.swift */; };
+		33CD2154E905D1E0B2B515525EF0B700 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA668F727C7BCE0D85DF5612872D48 /* ImageScrollView.swift */; };
+		362DECF8E168046DB782C35609272C7A /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F8F21848586087D3B6D8F78B8D598 /* NavigationView.swift */; };
+		3B1EEB1F21231C736F1FE252094D1B11 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCA2DFF6A41602F09D30AAB31425A19 /* CoreImage.framework */; };
+		3E36F62E3FA605E8B404FDA2F129139B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F507165DAF3CD589807AF06B1CA0BFF /* Foundation.framework */; };
+		438D00DE2698FC6DE829A928C8E85402 /* FilterFade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE5EFD82A6847D6ACEC097EB658CFB7 /* FilterFade.swift */; };
+		4B1D8738FF0774725F8EE1C2AAEDE2CE /* ControlViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEECBF53EE6DEB8120829297EEAA021 /* ControlViewBase.swift */; };
+		4FA7911D4833F595B9F5277DDB17A397 /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F82F9D79E7D5D1DD614FE33C18E69DB /* ImageSource.swift */; };
+		506830FCC03024DD794DF9242D2AFB6B /* GaussianBlurControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96995473F114EBC910550C46DB28C513 /* GaussianBlurControl.swift */; };
+		5201E6044F81904964A9DBF1D20C921F /* FilterHighlightShadowTint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0079D77F996AAA2615FFC56DB304E4E5 /* FilterHighlightShadowTint.swift */; };
+		54936A1598AA47A5B684AA819EC8541C /* ColorCubeControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF2BFD6C9990F2716180F133BD102F /* ColorCubeControlView.swift */; };
+		56BDC2D8FE199BC47F977347CCC8E0A2 /* EditMenuControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F6E39AA7228823C74D749D3830AAC /* EditMenuControlView.swift */; };
+		5B1E813D004425F540916DC283FECC78 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC705042A47D4D0DC0E86D8E6653FAEA /* Geometry.swift */; };
+		5DA7A69A608E3899B184E06FDE402157 /* FilterGaussianBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC632197E7A67BCD4067B5476179BAF3 /* FilterGaussianBlur.swift */; };
+		5E1FB4C0A464BDE124D476D9286490B5 /* FilterTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DCA97FB55BA53E891C79BE583E0CF5 /* FilterTemperature.swift */; };
+		62A59FC4155C3FDA6927AA267BC43BC0 /* Pods-AVCamFilter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0957B0517ED1415759272CCE6C582 /* Pods-AVCamFilter-dummy.m */; };
+		63F383F23A12E3CF2FF7AD04888E6A82 /* EditorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9AC2FDBBCC6CEBF1165B4E6DC2A6E8 /* EditorLog.swift */; };
+		66B474823D72E70A58AD772FCBDF2851 /* EngineLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D531750F2ED35B7838CA337908237DA /* EngineLog.swift */; };
+		679D9FCDEFF736D159FFA9D82C813616 /* AdjustmentControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50BAA24E1219CF14300314B775F31D4 /* AdjustmentControlView.swift */; };
+		681E724730617F0FAAB4ADEDD483662D /* TransitionPatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE08D3B062DEA6301A4275D3F6F5DD4 /* TransitionPatch-dummy.m */; };
+		68FF5478DCCD707956889E23A563B795 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885803A48372C656A229213EB22ECFB /* Source.swift */; };
+		6C5CD44C2B599A9225CB7DE2BD9ECFB6 /* FilterColorCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E111AED3B00D36BE8D36A01466169F /* FilterColorCube.swift */; };
+		6CA9357D3F18ADE6F9251D73F63ED136 /* PixelEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E247006A903542413ACDF778C8C0D9B /* PixelEditViewController.swift */; };
+		6D9FF8DF2338EDE5ADA3A7CB65F2AA01 /* SaturationControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6FB73E9E08AA0F929EEE3BC05A612 /* SaturationControl.swift */; };
+		6DADE0414B68D699EF704CFF80C56A41 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E98C0CE8C20BF0C254CA9150FCA76CC /* Media.xcassets */; };
+		6FED1D503DED4FFC0F842487F889062B /* FilterExposure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA79D7B2E454A05D4FA4B8C86A5342 /* FilterExposure.swift */; };
+		73C83C73F419CB9A8994FDEBAC2F76C0 /* ColorCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7C90D3EF053E527EF49F462DDE323 /* ColorCube.swift */; };
+		74167B7C3667E169ED37EC9C65346554 /* TemperatureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACFAC3348A206EF3670D7C2F0F033FB /* TemperatureControl.swift */; };
+		742B60B1668C0BA02D82F8FBBF88E34E /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FE99C9C6F1FA41D4402D69405F0A19 /* L10n.swift */; };
+		757F3D5101647E4095C05BB40C62AECD /* FilterShadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF006572035746A4EED2B04A25D137 /* FilterShadows.swift */; };
+		76FB4B023726E7E965409D96BF864506 /* StepSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1B174B350A315C351BFA56015883D /* StepSlider.swift */; };
+		83DD1409BD2000C8106CE7F4EA0276F5 /* MaskControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489810462D5B63506DEAF76139E0B1BC /* MaskControlView.swift */; };
+		849B89845683795DBD077AFA240A1235 /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB0DF4782CA208B778BBA6437A405B /* ImageRenderer.swift */; };
+		88ABEE2776D6B9BFE888C11D595EBAA5 /* OvalBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B59C2BF732A49A35532F1031C37D67C /* OvalBrush.swift */; };
+		8B3423CC1EA604935230AE588E64FE27 /* FilterControlBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79595D33670192071B114316CF3EAD22 /* FilterControlBase.swift */; };
+		8BDA73B50D528DF0CB90AF4030BB45D5 /* ExposureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC89D63FCFAD09ABB4C1A8422452ABB3 /* ExposureControl.swift */; };
+		8FCA096B34C7B27DC4838B9B8C986372 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248D443CF10A3F748D3BD809F2FE636D /* Style.swift */; };
+		901AF36D13992091D26DFC93BF86A461 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F507165DAF3CD589807AF06B1CA0BFF /* Foundation.framework */; };
+		916262F53A75FCD2E3344985B4CA8B17 /* FilterContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A29905F4B2A7768E4117F6B1D4AE49 /* FilterContrast.swift */; };
+		9294355CFB276422A4497DF62EF6E600 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9548D65AA39C4169305D7C0B79DD0F /* Layer.swift */; };
+		947742F607093CAC42658D2535DA197C /* HighlightsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCA5552A2BD8AC4A5E48AFF1CA5B569 /* HighlightsControl.swift */; };
+		9702FC80347CCACEDFEF701BD3DB7562 /* GraphicDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45059DCD9B4F8A1ECAE323FEC4A0CB29 /* GraphicDrawing.swift */; };
+		99127F049717269111A61B3782C912B9 /* PixelEngine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 298DE92BED9BE32E4C7B9FB1C06BC5B7 /* PixelEngine-dummy.m */; };
+		9A88F6722AA3A0696AB54049C6445DEC /* RootControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CA92FDC19FE0EA1C543927BAC4E8DA /* RootControlView.swift */; };
+		9B6A6731BCEB81786FFDBD8CD837027A /* Pods-AVCamFilter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0232FF94AACF6A1D12D1174A485EB295 /* Pods-AVCamFilter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A084DA479E3B771F4A783C3A7CBE6FAE /* TempCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615D27590DF578C288B68833692081E2 /* TempCode.swift */; };
+		A19369CAFDEB030500A7E6309E57EE32 /* InternalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC4451551EBDF5C90ABBD9740F2109 /* InternalUtils.swift */; };
+		A19DCC92CD9B88E52038CB34D3235763 /* VignetteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD162C09071D46DF7241D841058702 /* VignetteControl.swift */; };
+		A6E5A0F9CA4B991162FF515FCC0C1AD1 /* MetalImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C10959CB01707A5EDED4869253D22B /* MetalImageView.swift */; };
+		A71177C48FF81FD1B23FF9EC3FB88649 /* PixelEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF33EF452487D1240A45A20AD91BE0AC /* PixelEngine.swift */; };
+		A8A8FAFC818370A7255240F0A11A91D4 /* ImageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3624D09A228B12D8D0FE8CAC3C86D6D3 /* ImageTool.swift */; };
+		AB3481A0D4E6E01C2B425B1CD9EC3C47 /* FilterHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314DAD5F9330BDC1DF2E6DA5597220C /* FilterHighlights.swift */; };
+		AB71394D6EB78C503133E86AF2AC5F83 /* ContrastControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7107A858F8578234797FB6C6F192A8 /* ContrastControl.swift */; };
+		B0BBB38C0BC35177C5DA1B6E378E4C86 /* TransitionPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3197AFB033AD7C39CC9E38329DD8C51F /* TransitionPatch.framework */; };
+		B3AF1646231E85AFF5C2C17D872FCF4C /* DrawnPathInRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321AF63EF4B015F3A2FA3B88CA98C1A /* DrawnPathInRect.swift */; };
+		BF3D1E14B2FDDFD2B625B24E00275D23 /* ImagePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0C6D1A482C575FA6A4153B8BEF162 /* ImagePreviewView.swift */; };
+		C09E88FEB8F63ED329B46227149C29FA /* Filtering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F361D5FBFA203D78F53C5D940CE811 /* Filtering.swift */; };
+		C6AB513BD3E5BEB1F9E0E7AD38DE4242 /* PixelEditor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DDCAA1F4CE5C28024228DDABC59913E /* PixelEditor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8F913505B8D4649D7B53D9FF0572F5E /* PixelEditor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2074B3A45DF1DB0AD31C8A9665754A /* PixelEditor-dummy.m */; };
+		C942867050B9AE2914FEAB70F240D4F9 /* ControlStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FB4176D7B840DE84BCCE44F412F98 /* ControlStackView.swift */; };
+		CD679DC2B94D427D9484FC240EBAAF65 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCA2DFF6A41602F09D30AAB31425A19 /* CoreImage.framework */; };
+		D05BC49F0CC4886E61E620717B043B8A /* ClarityControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06844159F9D0F3401262D58A036D10F /* ClarityControl.swift */; };
+		D166C84B2141A45AF0CA69EDB623874F /* EditingStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB1E6F804E6CEF2B7303A60C4CA928 /* EditingStack.swift */; };
+		D6D813092A8EBD1532FBC2D481E9214D /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885201632F8B8506CE41E7B89DA1415 /* Options.swift */; };
+		D7D66DF093F3E9104F0EF0433CA2BA19 /* PixelEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868F75A8DC55D740A77F83972D1097A /* PixelEditor.swift */; };
+		E9D0BDBF060FF4FB35F2F1CFF677E031 /* BlurredMosaicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED98B793F8378F637808C34667658F /* BlurredMosaicView.swift */; };
+		EB9227D5D0CA5D299EEEBA3E71BA3CE3 /* TransitionPatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05A017FF775193F8E3636E9C8882E7F9 /* TransitionPatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBBE31A2A34730DC5BD264A36A13EFE6 /* DryDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F021AD50311B72AF2E5EA42075F5A6B6 /* DryDrawingView.swift */; };
+		EC124F3A1EF8C85740482009940D241B /* GLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363223A0390CB0E40B8B6260D70979E1 /* GLImageView.swift */; };
+		EFD824B87D0EAE2C2C77A058AAA1F204 /* ParameterRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFE3D9BBDADED10C066A6AC4FF4369 /* ParameterRange.swift */; };
+		EFDE056835EC9AA190E15E55B7EF0CFA /* FilterSharpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9CA4601BD97F4AA888C426C441C00 /* FilterSharpen.swift */; };
+		F12D80D00F3EFC98CDBDA93E28280982 /* BlurredMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081EF14B1EE539BA2C5D7924E4BE4485 /* BlurredMask.swift */; };
+		F6145725FC577BA8217205AD8FA34CA8 /* HardwareImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492D64AD112AE7BC4FC3B2E1579BD91 /* HardwareImageView.swift */; };
+		F66F6306549F960446D36C80EC678CC8 /* DoodleControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5644B89657E41B6C2777218E380D7DC4 /* DoodleControlView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2526476E3416F3B400C7242F8A95B33A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E36550BDE17566842169E12CC5B24B;
+			remoteInfo = PixelEditor;
+		};
+		338A77AD259833ADA6540EF1F1DC5CEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A9A58D570F0F84EC44791799CC961D2;
+			remoteInfo = TransitionPatch;
+		};
+		8FF3167C4B0AC7ED48400261433456DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED58E1991F8EA474C2BD66693D279FD;
+			remoteInfo = PixelEngine;
+		};
+		A929234FB21F01DCCD1AAC36B2A6C4FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED58E1991F8EA474C2BD66693D279FD;
+			remoteInfo = PixelEngine;
+		};
+		D49E07DB5F65494B80D2890D266431AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A9A58D570F0F84EC44791799CC961D2;
+			remoteInfo = TransitionPatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0079D77F996AAA2615FFC56DB304E4E5 /* FilterHighlightShadowTint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterHighlightShadowTint.swift; path = Sources/PixelEngine/Filter/FilterHighlightShadowTint.swift; sourceTree = "<group>"; };
+		01E1C1ECF71C29B3504B4F5F2E55FF89 /* ShadowsControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShadowsControl.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/ShadowsControl.swift; sourceTree = "<group>"; };
+		0232FF94AACF6A1D12D1174A485EB295 /* Pods-AVCamFilter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AVCamFilter-umbrella.h"; sourceTree = "<group>"; };
+		023B909E68F5027A3F0D4674DD930A21 /* Pods-AVCamFilter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVCamFilter-acknowledgements.plist"; sourceTree = "<group>"; };
+		04BF1CECF59F596A5C95ED477B0DE712 /* CropAndStraightenView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropAndStraightenView.swift; path = Sources/PixelEditor/ImageViews/CropAndStraightenView.swift; sourceTree = "<group>"; };
+		05A017FF775193F8E3636E9C8882E7F9 /* TransitionPatch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionPatch-umbrella.h"; sourceTree = "<group>"; };
+		05E2B4A853A4AB3E2CEF56868C733C08 /* SharpenControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharpenControl.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/SharpenControl.swift; sourceTree = "<group>"; };
+		081EF14B1EE539BA2C5D7924E4BE4485 /* BlurredMask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurredMask.swift; path = Sources/PixelEngine/BlurredMask.swift; sourceTree = "<group>"; };
+		0885201632F8B8506CE41E7B89DA1415 /* Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Options.swift; path = Sources/PixelEditor/Options.swift; sourceTree = "<group>"; };
+		09339B83DF13EF6AA213FA93B66249FD /* PixelEditor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PixelEditor-Info.plist"; sourceTree = "<group>"; };
+		0CD78CA5E88DECFEECC0CC0A7EA2A3DF /* Pods-AVCamFilter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AVCamFilter-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0FA2B73BA252234B5A1866C2345A6E94 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0FED98B793F8378F637808C34667658F /* BlurredMosaicView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurredMosaicView.swift; path = Sources/PixelEditor/ImageViews/BlurredMosaicView.swift; sourceTree = "<group>"; };
+		14C10959CB01707A5EDED4869253D22B /* MetalImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetalImageView.swift; path = Sources/PixelEngine/ImageView/MetalImageView.swift; sourceTree = "<group>"; };
+		21B0C6D1A482C575FA6A4153B8BEF162 /* ImagePreviewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePreviewView.swift; path = Sources/PixelEditor/ImageViews/ImagePreviewView.swift; sourceTree = "<group>"; };
+		2321AF63EF4B015F3A2FA3B88CA98C1A /* DrawnPathInRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawnPathInRect.swift; path = Sources/PixelEngine/DrawnPathInRect.swift; sourceTree = "<group>"; };
+		240284B23241A3DB4C644CAEC80412D4 /* PixelEngine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PixelEngine-prefix.pch"; sourceTree = "<group>"; };
+		248D443CF10A3F748D3BD809F2FE636D /* Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Style.swift; path = Sources/PixelEditor/Style.swift; sourceTree = "<group>"; };
+		2495144E6F93BA05A98A03DFAF42619F /* PixelEngine.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PixelEngine.modulemap; sourceTree = "<group>"; };
+		298DE92BED9BE32E4C7B9FB1C06BC5B7 /* PixelEngine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PixelEngine-dummy.m"; sourceTree = "<group>"; };
+		2AB74DA53BCF5475D3DE21057BD58812 /* Pods-AVCamFilter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVCamFilter-frameworks.sh"; sourceTree = "<group>"; };
+		2DE5EFD82A6847D6ACEC097EB658CFB7 /* FilterFade.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterFade.swift; path = Sources/PixelEngine/Filter/FilterFade.swift; sourceTree = "<group>"; };
+		2EFA668F727C7BCE0D85DF5612872D48 /* ImageScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageScrollView.swift; path = Sources/PixelEditor/Components/ImageScrollView.swift; sourceTree = "<group>"; };
+		3197AFB033AD7C39CC9E38329DD8C51F /* TransitionPatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransitionPatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34AA93D1B678B97A2881D60B5B002202 /* Pods-AVCamFilter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVCamFilter.release.xcconfig"; sourceTree = "<group>"; };
+		3589CC50777D727E22228583024D6894 /* Pods-AVCamFilter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AVCamFilter.modulemap"; sourceTree = "<group>"; };
+		3624D09A228B12D8D0FE8CAC3C86D6D3 /* ImageTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTool.swift; path = Sources/PixelEngine/Engine/ImageTool.swift; sourceTree = "<group>"; };
+		362ADA9B3FBB657738B0A81B495C93A2 /* DrawnPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawnPath.swift; path = Sources/PixelEngine/DrawnPath.swift; sourceTree = "<group>"; };
+		363223A0390CB0E40B8B6260D70979E1 /* GLImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GLImageView.swift; path = Sources/PixelEngine/ImageView/GLImageView.swift; sourceTree = "<group>"; };
+		3C9AC2FDBBCC6CEBF1165B4E6DC2A6E8 /* EditorLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditorLog.swift; path = Sources/PixelEditor/Utils/EditorLog.swift; sourceTree = "<group>"; };
+		3DA7C90D3EF053E527EF49F462DDE323 /* ColorCube.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorCube.swift; path = Sources/PixelEngine/ColorCube.swift; sourceTree = "<group>"; };
+		3DD187DD771E2222B848B130A7D79CC9 /* Pods_AVCamFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AVCamFilter.framework; path = "Pods-AVCamFilter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DEC4451551EBDF5C90ABBD9740F2109 /* InternalUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternalUtils.swift; path = Sources/PixelEngine/InternalUtils.swift; sourceTree = "<group>"; };
+		3F507165DAF3CD589807AF06B1CA0BFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		45059DCD9B4F8A1ECAE323FEC4A0CB29 /* GraphicDrawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphicDrawing.swift; path = Sources/PixelEngine/GraphicDrawing.swift; sourceTree = "<group>"; };
+		489810462D5B63506DEAF76139E0B1BC /* MaskControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskControlView.swift; path = Sources/PixelEditor/Components/Controls/MaskControlView.swift; sourceTree = "<group>"; };
+		496A843AE444E21538D90552873CAAD4 /* PixelEngine-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PixelEngine-umbrella.h"; sourceTree = "<group>"; };
+		4A9548D65AA39C4169305D7C0B79DD0F /* Layer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layer.swift; path = Sources/PixelEngine/Engine/Layer.swift; sourceTree = "<group>"; };
+		4B59C2BF732A49A35532F1031C37D67C /* OvalBrush.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OvalBrush.swift; path = Sources/PixelEngine/OvalBrush.swift; sourceTree = "<group>"; };
+		4D1DDBC1D6B4FFBC19F779881A3075D6 /* Pods-AVCamFilter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVCamFilter.debug.xcconfig"; sourceTree = "<group>"; };
+		51BFE3D9BBDADED10C066A6AC4FF4369 /* ParameterRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterRange.swift; path = Sources/PixelEngine/ParameterRange.swift; sourceTree = "<group>"; };
+		5644B89657E41B6C2777218E380D7DC4 /* DoodleControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoodleControlView.swift; path = Sources/PixelEditor/Components/Controls/DoodleControlView.swift; sourceTree = "<group>"; };
+		56CA92FDC19FE0EA1C543927BAC4E8DA /* RootControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RootControlView.swift; path = Sources/PixelEditor/Components/Controls/RootControlView.swift; sourceTree = "<group>"; };
+		5CB12269F8C3FCB3F074854FA2DA53F6 /* PixelEditor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PixelEditor-prefix.pch"; sourceTree = "<group>"; };
+		5CCA2DFF6A41602F09D30AAB31425A19 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		5D531750F2ED35B7838CA337908237DA /* EngineLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EngineLog.swift; path = Sources/PixelEngine/EngineLog.swift; sourceTree = "<group>"; };
+		5D821F58C57482B51ED232B666912310 /* FilterBrightness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterBrightness.swift; path = Sources/PixelEngine/Filter/FilterBrightness.swift; sourceTree = "<group>"; };
+		5DDCAA1F4CE5C28024228DDABC59913E /* PixelEditor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PixelEditor-umbrella.h"; sourceTree = "<group>"; };
+		5DE0957B0517ED1415759272CCE6C582 /* Pods-AVCamFilter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AVCamFilter-dummy.m"; sourceTree = "<group>"; };
+		5E247006A903542413ACDF778C8C0D9B /* PixelEditViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PixelEditViewController.swift; path = Sources/PixelEditor/PixelEditViewController.swift; sourceTree = "<group>"; };
+		615D27590DF578C288B68833692081E2 /* TempCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TempCode.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/TempCode.swift; sourceTree = "<group>"; };
+		6314DAD5F9330BDC1DF2E6DA5597220C /* FilterHighlights.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterHighlights.swift; path = Sources/PixelEngine/Filter/FilterHighlights.swift; sourceTree = "<group>"; };
+		6809EDE11611E797E642DE29B29C45BE /* PixelEngine-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PixelEngine-Info.plist"; sourceTree = "<group>"; };
+		6868F75A8DC55D740A77F83972D1097A /* PixelEditor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PixelEditor.swift; path = Sources/PixelEditor/PixelEditor.swift; sourceTree = "<group>"; };
+		69ED83BF12C2916CDBF3DA3483D0E969 /* TransitionPatch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TransitionPatch.modulemap; sourceTree = "<group>"; };
+		6DC7DEA16C1454419E1ACF9B0F51AAA3 /* TransitionPatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TransitionPatch.framework; path = TransitionPatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EEECBF53EE6DEB8120829297EEAA021 /* ControlViewBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlViewBase.swift; path = Sources/PixelEditor/Components/Controls/ControlViewBase.swift; sourceTree = "<group>"; };
+		7492D64AD112AE7BC4FC3B2E1579BD91 /* HardwareImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HardwareImageView.swift; path = Sources/PixelEngine/ImageView/HardwareImageView.swift; sourceTree = "<group>"; };
+		78F361D5FBFA203D78F53C5D940CE811 /* Filtering.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filtering.swift; path = Sources/PixelEngine/Filtering.swift; sourceTree = "<group>"; };
+		79595D33670192071B114316CF3EAD22 /* FilterControlBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterControlBase.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/FilterControlBase.swift; sourceTree = "<group>"; };
+		7CBBC5CD18C1C108663710DD515078AF /* TransitionPatch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionPatch-prefix.pch"; sourceTree = "<group>"; };
+		835BC86B72AE8297DF16F34268B2832F /* FilterUnsharpMask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterUnsharpMask.swift; path = Sources/PixelEngine/Filter/FilterUnsharpMask.swift; sourceTree = "<group>"; };
+		8885803A48372C656A229213EB22ECFB /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Source.swift; path = TransitionPatch/Source.swift; sourceTree = "<group>"; };
+		8A54FC8390B4D5164A06A1BDE2E40176 /* TransitionPatch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TransitionPatch-Info.plist"; sourceTree = "<group>"; };
+		8AF4A4A5258DC2BC3CF5057215E1A8D1 /* FadeControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FadeControl.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/FadeControl.swift; sourceTree = "<group>"; };
+		8EE08D3B062DEA6301A4275D3F6F5DD4 /* TransitionPatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransitionPatch-dummy.m"; sourceTree = "<group>"; };
+		8F82F9D79E7D5D1DD614FE33C18E69DB /* ImageSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSource.swift; path = Sources/PixelEngine/ImageSource.swift; sourceTree = "<group>"; };
+		8FFB0DF4782CA208B778BBA6437A405B /* ImageRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageRenderer.swift; path = Sources/PixelEngine/Engine/ImageRenderer.swift; sourceTree = "<group>"; };
+		90A9914B0BB4A5C211B9DE3A232FFA79 /* PixelEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PixelEditor.framework; path = PixelEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96995473F114EBC910550C46DB28C513 /* GaussianBlurControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaussianBlurControl.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/GaussianBlurControl.swift; sourceTree = "<group>"; };
+		99A29905F4B2A7768E4117F6B1D4AE49 /* FilterContrast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterContrast.swift; path = Sources/PixelEngine/Filter/FilterContrast.swift; sourceTree = "<group>"; };
+		9A2074B3A45DF1DB0AD31C8A9665754A /* PixelEditor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PixelEditor-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD1ACF5B70692469AA81767361A0099 /* PixelEditor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PixelEditor.xcconfig; sourceTree = "<group>"; };
+		9DE1B174B350A315C351BFA56015883D /* StepSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepSlider.swift; path = Sources/PixelEditor/Components/StepSlider.swift; sourceTree = "<group>"; };
+		9E98C0CE8C20BF0C254CA9150FCA76CC /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Sources/PixelEditor/Media.xcassets; sourceTree = "<group>"; };
+		A03F8F21848586087D3B6D8F78B8D598 /* NavigationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationView.swift; path = Sources/PixelEditor/Components/Controls/NavigationView.swift; sourceTree = "<group>"; };
+		A4D62575CC225E2817D9198A4A29EE3F /* FilterSaturation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterSaturation.swift; path = Sources/PixelEngine/Filter/FilterSaturation.swift; sourceTree = "<group>"; };
+		ABD9CA4601BD97F4AA888C426C441C00 /* FilterSharpen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterSharpen.swift; path = Sources/PixelEngine/Filter/FilterSharpen.swift; sourceTree = "<group>"; };
+		ACCB1E6F804E6CEF2B7303A60C4CA928 /* EditingStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditingStack.swift; path = Sources/PixelEngine/EditingStack.swift; sourceTree = "<group>"; };
+		AEEF2BFD6C9990F2716180F133BD102F /* ColorCubeControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorCubeControlView.swift; path = Sources/PixelEditor/Components/Controls/ColorCubeControlView.swift; sourceTree = "<group>"; };
+		B50BAA24E1219CF14300314B775F31D4 /* AdjustmentControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdjustmentControlView.swift; path = Sources/PixelEditor/Components/Controls/AdjustmentControlView.swift; sourceTree = "<group>"; };
+		BBAD162C09071D46DF7241D841058702 /* VignetteControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VignetteControl.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/VignetteControl.swift; sourceTree = "<group>"; };
+		BC705042A47D4D0DC0E86D8E6653FAEA /* Geometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Geometry.swift; path = Sources/PixelEngine/Geometry.swift; sourceTree = "<group>"; };
+		BEA88BDD87E36F085EEBE7A9CF10715E /* PixelEditor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PixelEditor.modulemap; sourceTree = "<group>"; };
+		BF33EF452487D1240A45A20AD91BE0AC /* PixelEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PixelEngine.swift; path = Sources/PixelEngine/PixelEngine.swift; sourceTree = "<group>"; };
+		C071535A417EDB253D2462DA97E40CC2 /* PixelEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PixelEngine.framework; path = PixelEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0AAE7501A3252609B163CE0D4DEB255 /* PixelEngine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PixelEngine.xcconfig; sourceTree = "<group>"; };
+		C8BA79D7B2E454A05D4FA4B8C86A5342 /* FilterExposure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterExposure.swift; path = Sources/PixelEngine/Filter/FilterExposure.swift; sourceTree = "<group>"; };
+		CA0AF27748954BB1AB6266E3A2104F2C /* FilterVignette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterVignette.swift; path = Sources/PixelEngine/Filter/FilterVignette.swift; sourceTree = "<group>"; };
+		CC89D63FCFAD09ABB4C1A8422452ABB3 /* ExposureControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExposureControl.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/ExposureControl.swift; sourceTree = "<group>"; };
+		CD7107A858F8578234797FB6C6F192A8 /* ContrastControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContrastControl.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/ContrastControl.swift; sourceTree = "<group>"; };
+		D06844159F9D0F3401262D58A036D10F /* ClarityControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClarityControl.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/ClarityControl.swift; sourceTree = "<group>"; };
+		D1E34E590A64B014A89D1269C88F35B5 /* PixelEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PixelEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C6FB73E9E08AA0F929EEE3BC05A612 /* SaturationControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SaturationControl.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/SaturationControl.swift; sourceTree = "<group>"; };
+		D6DCA97FB55BA53E891C79BE583E0CF5 /* FilterTemperature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterTemperature.swift; path = Sources/PixelEngine/Filter/FilterTemperature.swift; sourceTree = "<group>"; };
+		DB6FB4176D7B840DE84BCCE44F412F98 /* ControlStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlStackView.swift; path = Sources/PixelEditor/Components/Controls/ControlStackView.swift; sourceTree = "<group>"; };
+		DC632197E7A67BCD4067B5476179BAF3 /* FilterGaussianBlur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterGaussianBlur.swift; path = Sources/PixelEngine/Filter/FilterGaussianBlur.swift; sourceTree = "<group>"; };
+		DE4175C8F642A2F7E3AC1A2841398391 /* Pods-AVCamFilter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVCamFilter-Info.plist"; sourceTree = "<group>"; };
+		DFCA5552A2BD8AC4A5E48AFF1CA5B569 /* HighlightsControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HighlightsControl.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/HighlightsControl.swift; sourceTree = "<group>"; };
+		E0FE99C9C6F1FA41D4402D69405F0A19 /* L10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = L10n.swift; path = Sources/PixelEditor/L10n.swift; sourceTree = "<group>"; };
+		E6AF006572035746A4EED2B04A25D137 /* FilterShadows.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterShadows.swift; path = Sources/PixelEngine/Filter/FilterShadows.swift; sourceTree = "<group>"; };
+		E85F6E39AA7228823C74D749D3830AAC /* EditMenuControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditMenuControlView.swift; path = Sources/PixelEditor/Components/Controls/EditMenuControlView.swift; sourceTree = "<group>"; };
+		EACFAC3348A206EF3670D7C2F0F033FB /* TemperatureControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TemperatureControl.swift; path = Sources/PixelEditor/Components/Controls/FilterControl/TemperatureControl.swift; sourceTree = "<group>"; };
+		EBF77624844C9EFEFA905E0D00699FA9 /* ColorCubeStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorCubeStorage.swift; path = Sources/PixelEngine/ColorCubeStorage.swift; sourceTree = "<group>"; };
+		F021AD50311B72AF2E5EA42075F5A6B6 /* DryDrawingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DryDrawingView.swift; path = Sources/PixelEditor/Components/DryDrawingView.swift; sourceTree = "<group>"; };
+		F28E2FD161FB4EFBB5A889041AB33716 /* ZoomImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomImageView.swift; path = Sources/PixelEditor/Components/ZoomImageView.swift; sourceTree = "<group>"; };
+		F6E111AED3B00D36BE8D36A01466169F /* FilterColorCube.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterColorCube.swift; path = Sources/PixelEngine/Filter/FilterColorCube.swift; sourceTree = "<group>"; };
+		F74F224A2DAF6F188A83772E4BFFB420 /* TransitionPatch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionPatch.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08E1247BC98CF17C7702D9F029588384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E36F62E3FA605E8B404FDA2F129139B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA086DD8C4A4BF6F42F884CC2D7A302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1EEB1F21231C736F1FE252094D1B11 /* CoreImage.framework in Frameworks */,
+				0A52EF936E26AB4AF6478163EC2E5461 /* Foundation.framework in Frameworks */,
+				12C215E946CED48255C008FCD0515680 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91DE0D93C9D049D7CB9703D75C984D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD679DC2B94D427D9484FC240EBAAF65 /* CoreImage.framework in Frameworks */,
+				901AF36D13992091D26DFC93BF86A461 /* Foundation.framework in Frameworks */,
+				1DF40099A1B7FD21E6904C82138F53AF /* PixelEngine.framework in Frameworks */,
+				B0BBB38C0BC35177C5DA1B6E378E4C86 /* TransitionPatch.framework in Frameworks */,
+				118353B3A9B45B9FA8E504E61B79EC63 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1052622AF665D06914BB57424BC304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E29EFC759481831978CFCA8BB56DD8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DCEAA11D56E027A61D604EBE01F1436 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2495144E6F93BA05A98A03DFAF42619F /* PixelEngine.modulemap */,
+				C0AAE7501A3252609B163CE0D4DEB255 /* PixelEngine.xcconfig */,
+				298DE92BED9BE32E4C7B9FB1C06BC5B7 /* PixelEngine-dummy.m */,
+				6809EDE11611E797E642DE29B29C45BE /* PixelEngine-Info.plist */,
+				240284B23241A3DB4C644CAEC80412D4 /* PixelEngine-prefix.pch */,
+				496A843AE444E21538D90552873CAAD4 /* PixelEngine-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PixelEngine";
+			sourceTree = "<group>";
+		};
+		1ED11A74908495376831A6CE6D7AB75A /* PixelEditor */ = {
+			isa = PBXGroup;
+			children = (
+				B50BAA24E1219CF14300314B775F31D4 /* AdjustmentControlView.swift */,
+				0FED98B793F8378F637808C34667658F /* BlurredMosaicView.swift */,
+				D06844159F9D0F3401262D58A036D10F /* ClarityControl.swift */,
+				AEEF2BFD6C9990F2716180F133BD102F /* ColorCubeControlView.swift */,
+				CD7107A858F8578234797FB6C6F192A8 /* ContrastControl.swift */,
+				DB6FB4176D7B840DE84BCCE44F412F98 /* ControlStackView.swift */,
+				6EEECBF53EE6DEB8120829297EEAA021 /* ControlViewBase.swift */,
+				04BF1CECF59F596A5C95ED477B0DE712 /* CropAndStraightenView.swift */,
+				5644B89657E41B6C2777218E380D7DC4 /* DoodleControlView.swift */,
+				F021AD50311B72AF2E5EA42075F5A6B6 /* DryDrawingView.swift */,
+				E85F6E39AA7228823C74D749D3830AAC /* EditMenuControlView.swift */,
+				3C9AC2FDBBCC6CEBF1165B4E6DC2A6E8 /* EditorLog.swift */,
+				CC89D63FCFAD09ABB4C1A8422452ABB3 /* ExposureControl.swift */,
+				8AF4A4A5258DC2BC3CF5057215E1A8D1 /* FadeControl.swift */,
+				79595D33670192071B114316CF3EAD22 /* FilterControlBase.swift */,
+				96995473F114EBC910550C46DB28C513 /* GaussianBlurControl.swift */,
+				DFCA5552A2BD8AC4A5E48AFF1CA5B569 /* HighlightsControl.swift */,
+				21B0C6D1A482C575FA6A4153B8BEF162 /* ImagePreviewView.swift */,
+				2EFA668F727C7BCE0D85DF5612872D48 /* ImageScrollView.swift */,
+				E0FE99C9C6F1FA41D4402D69405F0A19 /* L10n.swift */,
+				489810462D5B63506DEAF76139E0B1BC /* MaskControlView.swift */,
+				A03F8F21848586087D3B6D8F78B8D598 /* NavigationView.swift */,
+				0885201632F8B8506CE41E7B89DA1415 /* Options.swift */,
+				6868F75A8DC55D740A77F83972D1097A /* PixelEditor.swift */,
+				5E247006A903542413ACDF778C8C0D9B /* PixelEditViewController.swift */,
+				56CA92FDC19FE0EA1C543927BAC4E8DA /* RootControlView.swift */,
+				D5C6FB73E9E08AA0F929EEE3BC05A612 /* SaturationControl.swift */,
+				01E1C1ECF71C29B3504B4F5F2E55FF89 /* ShadowsControl.swift */,
+				05E2B4A853A4AB3E2CEF56868C733C08 /* SharpenControl.swift */,
+				9DE1B174B350A315C351BFA56015883D /* StepSlider.swift */,
+				248D443CF10A3F748D3BD809F2FE636D /* Style.swift */,
+				615D27590DF578C288B68833692081E2 /* TempCode.swift */,
+				EACFAC3348A206EF3670D7C2F0F033FB /* TemperatureControl.swift */,
+				BBAD162C09071D46DF7241D841058702 /* VignetteControl.swift */,
+				F28E2FD161FB4EFBB5A889041AB33716 /* ZoomImageView.swift */,
+				DE4FB286D75B7F27B7D0A72A298703B2 /* Resources */,
+				BCE9C15E1BC3AF6B8C352690076440B3 /* Support Files */,
+			);
+			name = PixelEditor;
+			path = PixelEditor;
+			sourceTree = "<group>";
+		};
+		4481800A44778E148B503362F65B96D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90A9914B0BB4A5C211B9DE3A232FFA79 /* PixelEditor.framework */,
+				C071535A417EDB253D2462DA97E40CC2 /* PixelEngine.framework */,
+				3DD187DD771E2222B848B130A7D79CC9 /* Pods_AVCamFilter.framework */,
+				6DC7DEA16C1454419E1ACF9B0F51AAA3 /* TransitionPatch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DA18903AA50ADB5B29BC2D6D0941532 /* Pods-AVCamFilter */ = {
+			isa = PBXGroup;
+			children = (
+				3589CC50777D727E22228583024D6894 /* Pods-AVCamFilter.modulemap */,
+				0CD78CA5E88DECFEECC0CC0A7EA2A3DF /* Pods-AVCamFilter-acknowledgements.markdown */,
+				023B909E68F5027A3F0D4674DD930A21 /* Pods-AVCamFilter-acknowledgements.plist */,
+				5DE0957B0517ED1415759272CCE6C582 /* Pods-AVCamFilter-dummy.m */,
+				2AB74DA53BCF5475D3DE21057BD58812 /* Pods-AVCamFilter-frameworks.sh */,
+				DE4175C8F642A2F7E3AC1A2841398391 /* Pods-AVCamFilter-Info.plist */,
+				0232FF94AACF6A1D12D1174A485EB295 /* Pods-AVCamFilter-umbrella.h */,
+				4D1DDBC1D6B4FFBC19F779881A3075D6 /* Pods-AVCamFilter.debug.xcconfig */,
+				34AA93D1B678B97A2881D60B5B002202 /* Pods-AVCamFilter.release.xcconfig */,
+			);
+			name = "Pods-AVCamFilter";
+			path = "Target Support Files/Pods-AVCamFilter";
+			sourceTree = "<group>";
+		};
+		521FBA9C5DE6F8F1502D64A2C9265558 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1E34E590A64B014A89D1269C88F35B5 /* PixelEngine.framework */,
+				3197AFB033AD7C39CC9E38329DD8C51F /* TransitionPatch.framework */,
+				95414D16B124FDAE7EF80AC268E5D0D0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8614F696C387DA31659579728B4A4171 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69ED83BF12C2916CDBF3DA3483D0E969 /* TransitionPatch.modulemap */,
+				F74F224A2DAF6F188A83772E4BFFB420 /* TransitionPatch.xcconfig */,
+				8EE08D3B062DEA6301A4275D3F6F5DD4 /* TransitionPatch-dummy.m */,
+				8A54FC8390B4D5164A06A1BDE2E40176 /* TransitionPatch-Info.plist */,
+				7CBBC5CD18C1C108663710DD515078AF /* TransitionPatch-prefix.pch */,
+				05A017FF775193F8E3636E9C8882E7F9 /* TransitionPatch-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TransitionPatch";
+			sourceTree = "<group>";
+		};
+		95414D16B124FDAE7EF80AC268E5D0D0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5CCA2DFF6A41602F09D30AAB31425A19 /* CoreImage.framework */,
+				3F507165DAF3CD589807AF06B1CA0BFF /* Foundation.framework */,
+				0FA2B73BA252234B5A1866C2345A6E94 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BCE9C15E1BC3AF6B8C352690076440B3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEA88BDD87E36F085EEBE7A9CF10715E /* PixelEditor.modulemap */,
+				9DD1ACF5B70692469AA81767361A0099 /* PixelEditor.xcconfig */,
+				9A2074B3A45DF1DB0AD31C8A9665754A /* PixelEditor-dummy.m */,
+				09339B83DF13EF6AA213FA93B66249FD /* PixelEditor-Info.plist */,
+				5CB12269F8C3FCB3F074854FA2DA53F6 /* PixelEditor-prefix.pch */,
+				5DDCAA1F4CE5C28024228DDABC59913E /* PixelEditor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PixelEditor";
+			sourceTree = "<group>";
+		};
+		C4E89B0FB2D74CC94215E8F1F5D783D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1ED11A74908495376831A6CE6D7AB75A /* PixelEditor */,
+				E815F3C82B351357DEB58F39EF523B38 /* PixelEngine */,
+				E06BC6E0D2CC65E319087D8BBCA9773A /* TransitionPatch */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				521FBA9C5DE6F8F1502D64A2C9265558 /* Frameworks */,
+				C4E89B0FB2D74CC94215E8F1F5D783D5 /* Pods */,
+				4481800A44778E148B503362F65B96D9 /* Products */,
+				D627329FAA6D072638C6CE8325EBEF1E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D627329FAA6D072638C6CE8325EBEF1E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DA18903AA50ADB5B29BC2D6D0941532 /* Pods-AVCamFilter */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DE4FB286D75B7F27B7D0A72A298703B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E98C0CE8C20BF0C254CA9150FCA76CC /* Media.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E06BC6E0D2CC65E319087D8BBCA9773A /* TransitionPatch */ = {
+			isa = PBXGroup;
+			children = (
+				8885803A48372C656A229213EB22ECFB /* Source.swift */,
+				8614F696C387DA31659579728B4A4171 /* Support Files */,
+			);
+			name = TransitionPatch;
+			path = TransitionPatch;
+			sourceTree = "<group>";
+		};
+		E815F3C82B351357DEB58F39EF523B38 /* PixelEngine */ = {
+			isa = PBXGroup;
+			children = (
+				081EF14B1EE539BA2C5D7924E4BE4485 /* BlurredMask.swift */,
+				3DA7C90D3EF053E527EF49F462DDE323 /* ColorCube.swift */,
+				EBF77624844C9EFEFA905E0D00699FA9 /* ColorCubeStorage.swift */,
+				362ADA9B3FBB657738B0A81B495C93A2 /* DrawnPath.swift */,
+				2321AF63EF4B015F3A2FA3B88CA98C1A /* DrawnPathInRect.swift */,
+				ACCB1E6F804E6CEF2B7303A60C4CA928 /* EditingStack.swift */,
+				5D531750F2ED35B7838CA337908237DA /* EngineLog.swift */,
+				5D821F58C57482B51ED232B666912310 /* FilterBrightness.swift */,
+				F6E111AED3B00D36BE8D36A01466169F /* FilterColorCube.swift */,
+				99A29905F4B2A7768E4117F6B1D4AE49 /* FilterContrast.swift */,
+				C8BA79D7B2E454A05D4FA4B8C86A5342 /* FilterExposure.swift */,
+				2DE5EFD82A6847D6ACEC097EB658CFB7 /* FilterFade.swift */,
+				DC632197E7A67BCD4067B5476179BAF3 /* FilterGaussianBlur.swift */,
+				6314DAD5F9330BDC1DF2E6DA5597220C /* FilterHighlights.swift */,
+				0079D77F996AAA2615FFC56DB304E4E5 /* FilterHighlightShadowTint.swift */,
+				78F361D5FBFA203D78F53C5D940CE811 /* Filtering.swift */,
+				A4D62575CC225E2817D9198A4A29EE3F /* FilterSaturation.swift */,
+				E6AF006572035746A4EED2B04A25D137 /* FilterShadows.swift */,
+				ABD9CA4601BD97F4AA888C426C441C00 /* FilterSharpen.swift */,
+				D6DCA97FB55BA53E891C79BE583E0CF5 /* FilterTemperature.swift */,
+				835BC86B72AE8297DF16F34268B2832F /* FilterUnsharpMask.swift */,
+				CA0AF27748954BB1AB6266E3A2104F2C /* FilterVignette.swift */,
+				BC705042A47D4D0DC0E86D8E6653FAEA /* Geometry.swift */,
+				363223A0390CB0E40B8B6260D70979E1 /* GLImageView.swift */,
+				45059DCD9B4F8A1ECAE323FEC4A0CB29 /* GraphicDrawing.swift */,
+				7492D64AD112AE7BC4FC3B2E1579BD91 /* HardwareImageView.swift */,
+				8FFB0DF4782CA208B778BBA6437A405B /* ImageRenderer.swift */,
+				8F82F9D79E7D5D1DD614FE33C18E69DB /* ImageSource.swift */,
+				3624D09A228B12D8D0FE8CAC3C86D6D3 /* ImageTool.swift */,
+				3DEC4451551EBDF5C90ABBD9740F2109 /* InternalUtils.swift */,
+				4A9548D65AA39C4169305D7C0B79DD0F /* Layer.swift */,
+				14C10959CB01707A5EDED4869253D22B /* MetalImageView.swift */,
+				4B59C2BF732A49A35532F1031C37D67C /* OvalBrush.swift */,
+				51BFE3D9BBDADED10C066A6AC4FF4369 /* ParameterRange.swift */,
+				BF33EF452487D1240A45A20AD91BE0AC /* PixelEngine.swift */,
+				0DCEAA11D56E027A61D604EBE01F1436 /* Support Files */,
+			);
+			name = PixelEngine;
+			path = PixelEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		923C74DEBC34709BCFFAD5D8A09C0C39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0535D0E372F18903D8D5431C35026982 /* PixelEngine-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7142774AAFA6E1A37073ED15E8B8EB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6A6731BCEB81786FFDBD8CD837027A /* Pods-AVCamFilter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8ABE765465DC9302CBC063D00B618F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9227D5D0CA5D299EEEBA3E71BA3CE3 /* TransitionPatch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B56AC627C47234DEF6B92D83F2BA65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6AB513BD3E5BEB1F9E0E7AD38DE4242 /* PixelEditor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0ED58E1991F8EA474C2BD66693D279FD /* PixelEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3644DFACF62100213D49993B8A9306F4 /* Build configuration list for PBXNativeTarget "PixelEngine" */;
+			buildPhases = (
+				923C74DEBC34709BCFFAD5D8A09C0C39 /* Headers */,
+				F207F395B6420392DB1653E92AB58BF9 /* Sources */,
+				4FA086DD8C4A4BF6F42F884CC2D7A302 /* Frameworks */,
+				B9985878A449F57C16C8E52413A7BA78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelEngine;
+			productName = PixelEngine;
+			productReference = C071535A417EDB253D2462DA97E40CC2 /* PixelEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A9A58D570F0F84EC44791799CC961D2 /* TransitionPatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50045DBE4B690ACDF0B5EABC4DCA3882 /* Build configuration list for PBXNativeTarget "TransitionPatch" */;
+			buildPhases = (
+				B8ABE765465DC9302CBC063D00B618F5 /* Headers */,
+				A1DC82BEAFAF728BD869CD9516FA8DF0 /* Sources */,
+				EB1052622AF665D06914BB57424BC304 /* Frameworks */,
+				1BB811C8587BAE7EDE7CC1BA20E41F92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransitionPatch;
+			productName = TransitionPatch;
+			productReference = 6DC7DEA16C1454419E1ACF9B0F51AAA3 /* TransitionPatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1E36550BDE17566842169E12CC5B24B /* PixelEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BAC8445CFFDB82ED470253195E8502D /* Build configuration list for PBXNativeTarget "PixelEditor" */;
+			buildPhases = (
+				F0B56AC627C47234DEF6B92D83F2BA65 /* Headers */,
+				2F15DD137C2DAEAC0CEA1C486B6C1B92 /* Sources */,
+				91DE0D93C9D049D7CB9703D75C984D85 /* Frameworks */,
+				D5E07E9F3594A5E5E6BF30E8A9A770D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93DE486A45EEBF9C095316232A6D2970 /* PBXTargetDependency */,
+				4BEF0E605F940160911A42C08879CF08 /* PBXTargetDependency */,
+			);
+			name = PixelEditor;
+			productName = PixelEditor;
+			productReference = 90A9914B0BB4A5C211B9DE3A232FFA79 /* PixelEditor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF0C0939CBC6EA5CDCFEFB211FB649F5 /* Pods-AVCamFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1278A15D8723E903BEEAF54563DBAC5F /* Build configuration list for PBXNativeTarget "Pods-AVCamFilter" */;
+			buildPhases = (
+				A7142774AAFA6E1A37073ED15E8B8EB7 /* Headers */,
+				0DE4F213429D1C4E65A4B8C924AE6AB8 /* Sources */,
+				08E1247BC98CF17C7702D9F029588384 /* Frameworks */,
+				C2EDB3F5742A9D6DE9E7C193E37E6B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0A4256AB2B4ADF29FCC113BA2063FD9 /* PBXTargetDependency */,
+				9F37D64EBA27CBCD865109B07C281303 /* PBXTargetDependency */,
+				188757BE6FD60C156D5D827EFD843761 /* PBXTargetDependency */,
+			);
+			name = "Pods-AVCamFilter";
+			productName = "Pods-AVCamFilter";
+			productReference = 3DD187DD771E2222B848B130A7D79CC9 /* Pods_AVCamFilter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4481800A44778E148B503362F65B96D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1E36550BDE17566842169E12CC5B24B /* PixelEditor */,
+				0ED58E1991F8EA474C2BD66693D279FD /* PixelEngine */,
+				FF0C0939CBC6EA5CDCFEFB211FB649F5 /* Pods-AVCamFilter */,
+				7A9A58D570F0F84EC44791799CC961D2 /* TransitionPatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BB811C8587BAE7EDE7CC1BA20E41F92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9985878A449F57C16C8E52413A7BA78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2EDB3F5742A9D6DE9E7C193E37E6B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E07E9F3594A5E5E6BF30E8A9A770D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DADE0414B68D699EF704CFF80C56A41 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DE4F213429D1C4E65A4B8C924AE6AB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A59FC4155C3FDA6927AA267BC43BC0 /* Pods-AVCamFilter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F15DD137C2DAEAC0CEA1C486B6C1B92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679D9FCDEFF736D159FFA9D82C813616 /* AdjustmentControlView.swift in Sources */,
+				E9D0BDBF060FF4FB35F2F1CFF677E031 /* BlurredMosaicView.swift in Sources */,
+				D05BC49F0CC4886E61E620717B043B8A /* ClarityControl.swift in Sources */,
+				54936A1598AA47A5B684AA819EC8541C /* ColorCubeControlView.swift in Sources */,
+				AB71394D6EB78C503133E86AF2AC5F83 /* ContrastControl.swift in Sources */,
+				C942867050B9AE2914FEAB70F240D4F9 /* ControlStackView.swift in Sources */,
+				4B1D8738FF0774725F8EE1C2AAEDE2CE /* ControlViewBase.swift in Sources */,
+				1C802E193CB06CFDF5079A9D155E03F8 /* CropAndStraightenView.swift in Sources */,
+				F66F6306549F960446D36C80EC678CC8 /* DoodleControlView.swift in Sources */,
+				EBBE31A2A34730DC5BD264A36A13EFE6 /* DryDrawingView.swift in Sources */,
+				56BDC2D8FE199BC47F977347CCC8E0A2 /* EditMenuControlView.swift in Sources */,
+				63F383F23A12E3CF2FF7AD04888E6A82 /* EditorLog.swift in Sources */,
+				8BDA73B50D528DF0CB90AF4030BB45D5 /* ExposureControl.swift in Sources */,
+				145DB3E92D8A0C9D8377F95108CAE1A8 /* FadeControl.swift in Sources */,
+				8B3423CC1EA604935230AE588E64FE27 /* FilterControlBase.swift in Sources */,
+				506830FCC03024DD794DF9242D2AFB6B /* GaussianBlurControl.swift in Sources */,
+				947742F607093CAC42658D2535DA197C /* HighlightsControl.swift in Sources */,
+				BF3D1E14B2FDDFD2B625B24E00275D23 /* ImagePreviewView.swift in Sources */,
+				33CD2154E905D1E0B2B515525EF0B700 /* ImageScrollView.swift in Sources */,
+				742B60B1668C0BA02D82F8FBBF88E34E /* L10n.swift in Sources */,
+				83DD1409BD2000C8106CE7F4EA0276F5 /* MaskControlView.swift in Sources */,
+				362DECF8E168046DB782C35609272C7A /* NavigationView.swift in Sources */,
+				D6D813092A8EBD1532FBC2D481E9214D /* Options.swift in Sources */,
+				C8F913505B8D4649D7B53D9FF0572F5E /* PixelEditor-dummy.m in Sources */,
+				D7D66DF093F3E9104F0EF0433CA2BA19 /* PixelEditor.swift in Sources */,
+				6CA9357D3F18ADE6F9251D73F63ED136 /* PixelEditViewController.swift in Sources */,
+				9A88F6722AA3A0696AB54049C6445DEC /* RootControlView.swift in Sources */,
+				6D9FF8DF2338EDE5ADA3A7CB65F2AA01 /* SaturationControl.swift in Sources */,
+				0068D743B20E8902AEEAE56CF8356020 /* ShadowsControl.swift in Sources */,
+				02C3A81439926FB1A6B504FECB0EA4DC /* SharpenControl.swift in Sources */,
+				76FB4B023726E7E965409D96BF864506 /* StepSlider.swift in Sources */,
+				8FCA096B34C7B27DC4838B9B8C986372 /* Style.swift in Sources */,
+				A084DA479E3B771F4A783C3A7CBE6FAE /* TempCode.swift in Sources */,
+				74167B7C3667E169ED37EC9C65346554 /* TemperatureControl.swift in Sources */,
+				A19DCC92CD9B88E52038CB34D3235763 /* VignetteControl.swift in Sources */,
+				31091E9AE166E8EDE865A48FBBA45D46 /* ZoomImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DC82BEAFAF728BD869CD9516FA8DF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68FF5478DCCD707956889E23A563B795 /* Source.swift in Sources */,
+				681E724730617F0FAAB4ADEDD483662D /* TransitionPatch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F207F395B6420392DB1653E92AB58BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12D80D00F3EFC98CDBDA93E28280982 /* BlurredMask.swift in Sources */,
+				73C83C73F419CB9A8994FDEBAC2F76C0 /* ColorCube.swift in Sources */,
+				30D806BF763AC6C5E5CD884B17F9B87D /* ColorCubeStorage.swift in Sources */,
+				051463889C97F1281C0712FCF9C7A0D0 /* DrawnPath.swift in Sources */,
+				B3AF1646231E85AFF5C2C17D872FCF4C /* DrawnPathInRect.swift in Sources */,
+				D166C84B2141A45AF0CA69EDB623874F /* EditingStack.swift in Sources */,
+				66B474823D72E70A58AD772FCBDF2851 /* EngineLog.swift in Sources */,
+				1E57E803B410EDD3C4267EF2822622BA /* FilterBrightness.swift in Sources */,
+				6C5CD44C2B599A9225CB7DE2BD9ECFB6 /* FilterColorCube.swift in Sources */,
+				916262F53A75FCD2E3344985B4CA8B17 /* FilterContrast.swift in Sources */,
+				6FED1D503DED4FFC0F842487F889062B /* FilterExposure.swift in Sources */,
+				438D00DE2698FC6DE829A928C8E85402 /* FilterFade.swift in Sources */,
+				5DA7A69A608E3899B184E06FDE402157 /* FilterGaussianBlur.swift in Sources */,
+				AB3481A0D4E6E01C2B425B1CD9EC3C47 /* FilterHighlights.swift in Sources */,
+				5201E6044F81904964A9DBF1D20C921F /* FilterHighlightShadowTint.swift in Sources */,
+				C09E88FEB8F63ED329B46227149C29FA /* Filtering.swift in Sources */,
+				1B2496C39EE33A464A7F0132DCDC9A28 /* FilterSaturation.swift in Sources */,
+				757F3D5101647E4095C05BB40C62AECD /* FilterShadows.swift in Sources */,
+				EFDE056835EC9AA190E15E55B7EF0CFA /* FilterSharpen.swift in Sources */,
+				5E1FB4C0A464BDE124D476D9286490B5 /* FilterTemperature.swift in Sources */,
+				0F2E851EC0CD2ADE058B71948CF15254 /* FilterUnsharpMask.swift in Sources */,
+				2169795251C5710BC5D5C2AA16010D16 /* FilterVignette.swift in Sources */,
+				5B1E813D004425F540916DC283FECC78 /* Geometry.swift in Sources */,
+				EC124F3A1EF8C85740482009940D241B /* GLImageView.swift in Sources */,
+				9702FC80347CCACEDFEF701BD3DB7562 /* GraphicDrawing.swift in Sources */,
+				F6145725FC577BA8217205AD8FA34CA8 /* HardwareImageView.swift in Sources */,
+				849B89845683795DBD077AFA240A1235 /* ImageRenderer.swift in Sources */,
+				4FA7911D4833F595B9F5277DDB17A397 /* ImageSource.swift in Sources */,
+				A8A8FAFC818370A7255240F0A11A91D4 /* ImageTool.swift in Sources */,
+				A19369CAFDEB030500A7E6309E57EE32 /* InternalUtils.swift in Sources */,
+				9294355CFB276422A4497DF62EF6E600 /* Layer.swift in Sources */,
+				A6E5A0F9CA4B991162FF515FCC0C1AD1 /* MetalImageView.swift in Sources */,
+				88ABEE2776D6B9BFE888C11D595EBAA5 /* OvalBrush.swift in Sources */,
+				EFD824B87D0EAE2C2C77A058AAA1F204 /* ParameterRange.swift in Sources */,
+				99127F049717269111A61B3782C912B9 /* PixelEngine-dummy.m in Sources */,
+				A71177C48FF81FD1B23FF9EC3FB88649 /* PixelEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		188757BE6FD60C156D5D827EFD843761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitionPatch;
+			target = 7A9A58D570F0F84EC44791799CC961D2 /* TransitionPatch */;
+			targetProxy = D49E07DB5F65494B80D2890D266431AA /* PBXContainerItemProxy */;
+		};
+		4BEF0E605F940160911A42C08879CF08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitionPatch;
+			target = 7A9A58D570F0F84EC44791799CC961D2 /* TransitionPatch */;
+			targetProxy = 338A77AD259833ADA6540EF1F1DC5CEE /* PBXContainerItemProxy */;
+		};
+		93DE486A45EEBF9C095316232A6D2970 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PixelEngine;
+			target = 0ED58E1991F8EA474C2BD66693D279FD /* PixelEngine */;
+			targetProxy = A929234FB21F01DCCD1AAC36B2A6C4FA /* PBXContainerItemProxy */;
+		};
+		9F37D64EBA27CBCD865109B07C281303 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PixelEngine;
+			target = 0ED58E1991F8EA474C2BD66693D279FD /* PixelEngine */;
+			targetProxy = 8FF3167C4B0AC7ED48400261433456DA /* PBXContainerItemProxy */;
+		};
+		A0A4256AB2B4ADF29FCC113BA2063FD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PixelEditor;
+			target = D1E36550BDE17566842169E12CC5B24B /* PixelEditor */;
+			targetProxy = 2526476E3416F3B400C7242F8A95B33A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		087166669B48E6F7B03F0BEB32C4200D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F74F224A2DAF6F188A83772E4BFFB420 /* TransitionPatch.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionPatch/TransitionPatch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionPatch/TransitionPatch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TransitionPatch/TransitionPatch.modulemap";
+				PRODUCT_MODULE_NAME = TransitionPatch;
+				PRODUCT_NAME = TransitionPatch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4BE93BB8B4B010A5C856611747EE1B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0AAE7501A3252609B163CE0D4DEB255 /* PixelEngine.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PixelEngine/PixelEngine-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PixelEngine/PixelEngine-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PixelEngine/PixelEngine.modulemap";
+				PRODUCT_MODULE_NAME = PixelEngine;
+				PRODUCT_NAME = PixelEngine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		590452D87AA608C84D0687E095915D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F74F224A2DAF6F188A83772E4BFFB420 /* TransitionPatch.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionPatch/TransitionPatch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionPatch/TransitionPatch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TransitionPatch/TransitionPatch.modulemap";
+				PRODUCT_MODULE_NAME = TransitionPatch;
+				PRODUCT_NAME = TransitionPatch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7D32A933E32C056FE97E07101FCCC8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34AA93D1B678B97A2881D60B5B002202 /* Pods-AVCamFilter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AVCamFilter/Pods-AVCamFilter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AVCamFilter/Pods-AVCamFilter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A800F1DB5878DA680050E33FE2D9FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0AAE7501A3252609B163CE0D4DEB255 /* PixelEngine.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PixelEngine/PixelEngine-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PixelEngine/PixelEngine-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PixelEngine/PixelEngine.modulemap";
+				PRODUCT_MODULE_NAME = PixelEngine;
+				PRODUCT_NAME = PixelEngine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADB41EE808BDA0FDD29F4C3C86C1AFC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD1ACF5B70692469AA81767361A0099 /* PixelEditor.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PixelEditor/PixelEditor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PixelEditor/PixelEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PixelEditor/PixelEditor.modulemap";
+				PRODUCT_MODULE_NAME = PixelEditor;
+				PRODUCT_NAME = PixelEditor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF9834D48B5EE244311CE490AB576D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D1DDBC1D6B4FFBC19F779881A3075D6 /* Pods-AVCamFilter.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AVCamFilter/Pods-AVCamFilter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AVCamFilter/Pods-AVCamFilter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7A13CA54FA3119B3CC021FEAAC34D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD1ACF5B70692469AA81767361A0099 /* PixelEditor.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PixelEditor/PixelEditor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PixelEditor/PixelEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PixelEditor/PixelEditor.modulemap";
+				PRODUCT_MODULE_NAME = PixelEditor;
+				PRODUCT_NAME = PixelEditor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1278A15D8723E903BEEAF54563DBAC5F /* Build configuration list for PBXNativeTarget "Pods-AVCamFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9834D48B5EE244311CE490AB576D21 /* Debug */,
+				7D32A933E32C056FE97E07101FCCC8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BAC8445CFFDB82ED470253195E8502D /* Build configuration list for PBXNativeTarget "PixelEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB41EE808BDA0FDD29F4C3C86C1AFC0 /* Debug */,
+				E7A13CA54FA3119B3CC021FEAAC34D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3644DFACF62100213D49993B8A9306F4 /* Build configuration list for PBXNativeTarget "PixelEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A800F1DB5878DA680050E33FE2D9FE3 /* Debug */,
+				4BE93BB8B4B010A5C856611747EE1B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
+				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50045DBE4B690ACDF0B5EABC4DCA3882 /* Build configuration list for PBXNativeTarget "TransitionPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087166669B48E6F7B03F0BEB32C4200D /* Debug */,
+				590452D87AA608C84D0687E095915D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

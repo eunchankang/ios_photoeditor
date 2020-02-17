@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -180,26 +179,26 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="4MC-kL-oHm"/>
-                                        <exclude reference="mMI-Da-7ka"/>
-                                        <exclude reference="qEw-kW-QcT"/>
-                                        <exclude reference="Nu4-ta-jyM"/>
-                                        <exclude reference="OAV-UK-daL"/>
-                                        <exclude reference="0QW-JA-a8C"/>
                                         <exclude reference="3Mn-r2-lxb"/>
                                         <exclude reference="Nft-ne-aKP"/>
                                         <exclude reference="Ouo-TQ-IVi"/>
                                         <exclude reference="dVl-fc-tij"/>
-                                        <exclude reference="0fQ-E9-oUd"/>
-                                        <exclude reference="Gcq-tr-OXa"/>
-                                        <exclude reference="QS6-A0-FaY"/>
-                                        <exclude reference="gvH-rA-pyp"/>
-                                        <exclude reference="mNT-sa-2gB"/>
+                                        <exclude reference="Nu4-ta-jyM"/>
+                                        <exclude reference="OAV-UK-daL"/>
+                                        <exclude reference="4MC-kL-oHm"/>
+                                        <exclude reference="mMI-Da-7ka"/>
+                                        <exclude reference="qEw-kW-QcT"/>
+                                        <exclude reference="0QW-JA-a8C"/>
                                         <exclude reference="31i-uO-NM3"/>
                                         <exclude reference="WCS-NN-D1l"/>
                                         <exclude reference="bwq-hE-nqe"/>
                                         <exclude reference="e4o-W1-wEX"/>
                                         <exclude reference="zJx-GR-Q0l"/>
+                                        <exclude reference="0fQ-E9-oUd"/>
+                                        <exclude reference="Gcq-tr-OXa"/>
+                                        <exclude reference="QS6-A0-FaY"/>
+                                        <exclude reference="gvH-rA-pyp"/>
+                                        <exclude reference="mNT-sa-2gB"/>
                                         <exclude reference="3Fj-hm-Uov"/>
                                         <exclude reference="33E-SM-vaZ"/>
                                         <exclude reference="D4X-KZ-itd"/>
@@ -211,32 +210,24 @@
                                 </variation>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
-                                        <include reference="4MC-kL-oHm"/>
-                                        <exclude reference="AxY-Yc-JpS"/>
-                                        <exclude reference="ezb-6M-ymG"/>
-                                        <exclude reference="mMI-Da-7ka"/>
-                                        <include reference="qEw-kW-QcT"/>
-                                        <exclude reference="NTQ-0C-PNa"/>
-                                        <include reference="Nu4-ta-jyM"/>
-                                        <include reference="OAV-UK-daL"/>
-                                        <exclude reference="bVz-ve-Rpr"/>
-                                        <include reference="0QW-JA-a8C"/>
-                                        <exclude reference="Em4-Jn-T32"/>
-                                        <exclude reference="4KR-k8-asZ"/>
                                         <exclude reference="3Mn-r2-lxb"/>
                                         <exclude reference="KDh-Hw-bMN"/>
                                         <include reference="Nft-ne-aKP"/>
                                         <include reference="Ouo-TQ-IVi"/>
                                         <exclude reference="TSq-eO-TiT"/>
                                         <include reference="dVl-fc-tij"/>
-                                        <exclude reference="0fQ-E9-oUd"/>
-                                        <include reference="Gcq-tr-OXa"/>
-                                        <include reference="QS6-A0-FaY"/>
-                                        <exclude reference="Uqg-Ay-nZa"/>
-                                        <exclude reference="gvH-rA-pyp"/>
-                                        <exclude reference="i9C-lx-Eag"/>
-                                        <exclude reference="mNT-sa-2gB"/>
-                                        <exclude reference="vkJ-YP-f4j"/>
+                                        <exclude reference="NTQ-0C-PNa"/>
+                                        <include reference="Nu4-ta-jyM"/>
+                                        <include reference="OAV-UK-daL"/>
+                                        <exclude reference="bVz-ve-Rpr"/>
+                                        <include reference="4MC-kL-oHm"/>
+                                        <exclude reference="AxY-Yc-JpS"/>
+                                        <exclude reference="ezb-6M-ymG"/>
+                                        <exclude reference="mMI-Da-7ka"/>
+                                        <include reference="qEw-kW-QcT"/>
+                                        <exclude reference="4KR-k8-asZ"/>
+                                        <include reference="0QW-JA-a8C"/>
+                                        <exclude reference="Em4-Jn-T32"/>
                                         <exclude reference="0tX-CE-8gR"/>
                                         <include reference="31i-uO-NM3"/>
                                         <exclude reference="5pZ-jH-aTs"/>
@@ -247,6 +238,14 @@
                                         <include reference="bwq-hE-nqe"/>
                                         <include reference="e4o-W1-wEX"/>
                                         <include reference="zJx-GR-Q0l"/>
+                                        <exclude reference="0fQ-E9-oUd"/>
+                                        <include reference="Gcq-tr-OXa"/>
+                                        <include reference="QS6-A0-FaY"/>
+                                        <exclude reference="Uqg-Ay-nZa"/>
+                                        <exclude reference="gvH-rA-pyp"/>
+                                        <exclude reference="i9C-lx-Eag"/>
+                                        <exclude reference="mNT-sa-2gB"/>
+                                        <exclude reference="vkJ-YP-f4j"/>
                                         <include reference="3Fj-hm-Uov"/>
                                         <exclude reference="QPQ-ei-gD3"/>
                                         <include reference="33E-SM-vaZ"/>
@@ -362,12 +361,12 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="9TG-jQ-pwc"/>
-                                <exclude reference="1n2-OC-yeU"/>
+                                <exclude reference="jHa-bY-SYQ"/>
                                 <exclude reference="8pA-zm-mQQ"/>
                                 <exclude reference="GGh-e5-cdQ"/>
                                 <exclude reference="qid-qV-gvV"/>
                                 <exclude reference="s9t-6F-oew"/>
-                                <exclude reference="jHa-bY-SYQ"/>
+                                <exclude reference="1n2-OC-yeU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -376,16 +375,16 @@
                                 <exclude reference="QCs-aZ-RKC"/>
                                 <exclude reference="hSq-8d-ig7"/>
                                 <exclude reference="9TG-jQ-pwc"/>
-                                <include reference="1n2-OC-yeU"/>
-                                <exclude reference="Qhv-Ie-MxZ"/>
+                                <include reference="jHa-bY-SYQ"/>
+                                <exclude reference="jcz-lJ-VxY"/>
                                 <exclude reference="63K-qi-lsJ"/>
                                 <include reference="8pA-zm-mQQ"/>
                                 <include reference="GGh-e5-cdQ"/>
                                 <exclude reference="kXN-0w-bOw"/>
                                 <include reference="qid-qV-gvV"/>
                                 <exclude reference="s9t-6F-oew"/>
-                                <include reference="jHa-bY-SYQ"/>
-                                <exclude reference="jcz-lJ-VxY"/>
+                                <include reference="1n2-OC-yeU"/>
+                                <exclude reference="Qhv-Ie-MxZ"/>
                             </mask>
                         </variation>
                     </view>
@@ -405,11 +404,72 @@
                         <outlet property="previewView" destination="ajY-TT-566" id="Nki-d6-map"/>
                         <outlet property="resumeButton" destination="6D4-Y8-I1S" id="xYq-f7-4cQ"/>
                         <outlet property="videoFilterButton" destination="LK1-Xj-fRM" id="tG1-b5-aTU"/>
+                        <segue destination="IR3-5t-XAp" kind="show" identifier="ShowPhoto_Segue" id="rpt-Jn-COt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="31.793478260869566" y="89.855072463768124"/>
+        </scene>
+        <!--Pre View View Controller-->
+        <scene sceneID="sEH-08-QCT">
+            <objects>
+                <viewController id="IR3-5t-XAp" customClass="PreViewViewController" customModule="AVCamFilter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OOY-tF-pIf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2m-zd-4dg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="511"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mf-y0-rCD" userLabel="return">
+                                <rect key="frame" x="36" y="511" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Return">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ReturntoCamera:" destination="IR3-5t-XAp" eventType="touchUpInside" id="z9Y-05-v85"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gch-z4-Hgt" userLabel="edit">
+                                <rect key="frame" x="192" y="511" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Edit">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Edit:" destination="IR3-5t-XAp" eventType="touchUpInside" id="Ihm-yE-tMb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJI-EV-UDD" userLabel="save">
+                                <rect key="frame" x="360" y="511" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SavePhoto:" destination="IR3-5t-XAp" eventType="touchUpInside" id="2ia-fG-kip"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="W2m-zd-4dg" firstAttribute="centerY" secondItem="OOY-tF-pIf" secondAttribute="centerY" id="60l-Mo-3bc"/>
+                            <constraint firstItem="W2m-zd-4dg" firstAttribute="leading" secondItem="nuh-bs-7g5" secondAttribute="leading" id="Rf0-qg-vwp"/>
+                            <constraint firstItem="W2m-zd-4dg" firstAttribute="centerX" secondItem="OOY-tF-pIf" secondAttribute="centerX" id="aNi-Ps-M7d"/>
+                            <constraint firstItem="W2m-zd-4dg" firstAttribute="top" secondItem="OOY-tF-pIf" secondAttribute="topMargin" constant="-44" id="sMT-7F-e9k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nuh-bs-7g5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hjh-qk-PWb"/>
+                    <connections>
+                        <outlet property="imageView" destination="W2m-zd-4dg" id="dwq-Vk-nXJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGQ-ex-FCx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.86956521739137" y="89.732142857142847"/>
         </scene>
     </scenes>
     <resources>
