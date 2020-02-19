@@ -2,7 +2,7 @@
 
 Camera filter/ Editor demo app with AVCamfilter(apple example project), Cocoapods 'PixelEditor', 'PixelEngine'
 
-![](example1.gif)  ![](example2.gif)
+![](example2.gif)  ![](example1.gif)
 
 
 
